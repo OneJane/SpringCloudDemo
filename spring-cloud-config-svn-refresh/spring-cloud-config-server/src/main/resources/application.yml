@@ -1,0 +1,16 @@
+server:
+  port: 8001
+
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: http://192.168.3.233/svn/repo/config-repo
+          username: onejane
+          password: 123456
+        default-label: trunk
+  profiles:
+    active: subversion
+  application:
+    name: spring-cloud-config-server
